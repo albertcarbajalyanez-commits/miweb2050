@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Diputados 2026 - Lista por Partido</title>
+    <link rel="stylesheet" href="estilo1.css">
+    <style>
+        .parties-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        .party-card {
+            background: white;
+            border-radius: 20px;
+            width: 260px;
+            padding: 25px 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+        }
+        .party-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .party-img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin: 0 auto 15px;
+            display: block;
+            border-radius: 50%;
+            background: #f5f5f5;
+            padding: 10px;
+        }
+        .party-name {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1a2a3a;
+        }
+        .candidate-count {
+            background: #f0f0f0;
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #555;
+        }
+        .volver-btn {
+            background: #2c5282;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 40px;
+            cursor: pointer;
+            margin-bottom: 30px;
+            transition: background 0.2s;
+        }
+        .volver-btn:hover {
+            background: #1a3a5c;
+        }
+        .diputados-container {
+            background: white;
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        }
+        .party-header-detail {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 3px solid #f5b042;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .party-img-detail {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            background: #f5f5f5;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .party-title-detail {
+            font-size: 32px;
+            font-weight: 800;
+            color: #1a2a3a;
+            margin: 0;
+        }
+        .candidatos-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .candidato-diputado {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 18px;
+            background: #f9fafb;
+            border-radius: 60px;
+            transition: all 0.2s;
+            border: 1px solid #e9ecef;
+        }
+        .candidato-diputado:hover {
+            background: #f1f5f9;
+            transform: translateX(5px);
+        }
+        .candidato-numero {
+            font-weight: 800;
+            font-size: 18px;
+            color: #6c757d;
+            width: 40px;
+            text-align: center;
+        }
+        .candidato-img-mini {
+            width: 42px;
+            height: 42px;
+            object-fit: contain;
+            border-radius: 50%;
+            padding: 8px;
+            background-color: #1e4668;
+        }
+        .candidato-nombre-completo {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e2f3e;
+            flex: 1;
+            letter-spacing: 0.3px;
+        }
+        @media (max-width: 768px) {
+            .party-card { width: 220px; padding: 18px 10px; }
+            .party-name { font-size: 16px; }
+            .party-img { width: 60px; height: 60px; }
+            .party-title-detail { font-size: 24px; }
+            .party-img-detail { width: 60px; height: 60px; }
+            .candidato-diputado { padding: 8px 12px; }
+            .candidato-nombre-completo { font-size: 14px; }
+            .candidato-img-mini { width: 36px; height: 36px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="main-header">
+    <div class="container">
+        <nav class="menu">
+            <a href="tabla.html">Inicio</a>
+            <a href="senadoresnacionales.html">Senadores</a>
+            <a href="diputadosregionalesnacionales.html">Diputados</a>
+            <a href="parlamentoandino.html">Parlamento Andino</a>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <div id="lista-partidos">
+        <h1 class="title">ELECCIONES GENERALES 2026</h1>
+        <h2 class="subtitle">CANDIDATOS A DIPUTADOS</h2>
+        
+        <div class="parties-grid">
+            <div class="party-card" onclick="mostrarDiputados('AHORA NACION', 'ahoranacion.jpg')">
+                <img class="party-img" src="ahoranacion.jpg" alt="AN" onerror="this.src='logo_default.jpg'">
+                <div class="party-name">AHORA NACIÓN</div>
+                <div class="candidate-count">14 candidatos</div>
+            </div>
+            <div class="party-card" onclick="mostrarDiputados('FUERZA POPULAR', 'fuerzapopular.jpg')">
+                <img class="party-img" src="fuerzapopular.jpg" alt="FP">
+                <div class="party-name">FUERZA POPULAR</div>
+                <div class="candidate-count">15 candidatos</div>
+            </div>
+            <div class="party-card" onclick="mostrarDiputados('ALIANZA PARA EL PROGRESO', 'alianzaprogreso.jpg')">
+                <img class="party-img" src="alianzaprogreso.jpg" alt="APP" onerror="this.src='logo_default.jpg'">
+                <div class="party-name">ALIANZA PARA EL PROGRESO</div>
+                <div class="candidate-count">15 candidatos</div>
+            </div>
+            <div class="party-card" onclick="mostrarDiputados('EL BUEN GOBIERNO', 'buengobierno.jpg')">
+                <img class="party-img" src="buengobierno.jpg" alt="PBG">
+                <div class="party-name">EL BUEN GOBIERNO</div>
+                <div class="candidate-count">14 candidatos</div>
+            </div>
+            <div class="party-card" onclick="mostrarDiputados('JUNTOS POR EL PERU', 'juntosperu.jpg')">
+                <img class="party-img" src="juntosperu.jpg" alt="JPP" onerror="this.src='logo_default.jpg'">
+                <div class="party-name">JUNTOS POR EL PERÚ</div>
+                <div class="candidate-count">14 candidatos</div>
+            </div>
+            <div class="party-card" onclick="mostrarDiputados('FE EN EL PERU', 'feenelperu.jpg')">
+                <img class="party-img" src="feenelperu.jpg" alt="FE">
+                <div class="party-name">FE EN EL PERÚ</div>
+                <div class="candidate-count">14 candidatos</div>
+            </div>
+            <div class="party-card" onclick="mostrarDiputados('SOMOS PERU', 'somosperu.jpg')">
+                <img class="party-img" src="somosperu.jpg" alt="SP" onerror="this.src='logo_default.jpg'">
+                <div class="party-name">SOMOS PERÚ</div>
+                <div class="candidate-count">18 candidatos</div>
+            </div>
+            <div class="party-card" onclick="mostrarDiputados('PARTIDO MORADO', 'partidomorado.jpg')">
+                <img class="party-img" src="partidomorado.jpg" alt="PM">
+                <div class="party-name">PARTIDO MORADO</div>
+                <div class="candidate-count">18 candidatos</div>
+            </div>
+            <div class="party-card" onclick="mostrarDiputados('PARTIDO PAIS PARA TODOS', 'paisparatodos.jpg')">
+                <img class="party-img" src="paisparatodos.jpg" alt="PPT">
+                <div class="party-name">PARTIDO PAÍS PARA TODOS</div>
+                <div class="candidate-count">14 candidatos</div>
+            </div>
+            <div class="party-card" onclick="mostrarDiputados('RENOVACION POPULAR', 'renovacionpopular.jpg')">
+                <img class="party-img" src="renovacionpopular.jpg" alt="RP">
+                <div class="party-name">RENOVACIÓN POPULAR</div>
+                <div class="candidate-count">19 candidatos</div>
+            </div>
+            <div class="party-card" onclick="mostrarDiputados('INTEGRIDAD DEMOCRATICA', 'integridad.jpg')">
+                <img class="party-img" src="integridad.jpg" alt="ID" onerror="this.src='logo_default.jpg'">
+                <div class="party-name">INTEGRIDAD DEMOCRÁTICA</div>
+                <div class="candidate-count">19 candidatos</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="detalle-diputados" style="display:none;">
+        <button class="volver-btn" onclick="volverLista()">← VOLVER A PARTIDOS</button>
+        <div id="contenido-diputados"></div>
+    </div>
+</div>
+
+<script>

@@ -1,0 +1,29 @@
+/* 1 */
+div { margin: 10px; }
+
+/* 2 */
+p { margin: 20px 10px; }
+
+/* 3 */
+h1 { margin: 5px 15px 10px 20px; }
+
+/* 4 */
+button { margin: 12px; }
+
+/* 5 */
+.card { margin: 30px; }
+
+/* 6 */
+.box { margin-top: 10px; }
+
+/* 7 */
+.box { margin-bottom: 15px; }
+
+/* 8 */
+.box { margin-left: 20px; }
+
+/* 9 */
+.box { margin-right: 25px; }
+
+/* 10 */
+.container { margin: 5px 10px 15px 20px; }

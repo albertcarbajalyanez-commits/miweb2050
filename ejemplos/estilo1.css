@@ -1,0 +1,306 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.main-header {
+    background-color: #c10e16; /* Rojo JNE */
+    color: white;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.nav-menu a.active {
+    background: white;
+    color: #c10e16;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* Cuerpo de la página */
+.back-link {
+    margin-bottom: 20px;
+}
+
+.back-link a {
+    color: #c10e16;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Tarjeta Candidato */
+.candidate-card {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.candidate-photo {
+    position: relative;
+    width: 150px;
+}
+
+.candidate-photo img {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.party-logo {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #c10e16;
+    color: white;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+.candidate-info h1 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+.role { color: #666; font-size: 14px; margin: 0; }
+.position { font-weight: bold; margin: 2px 0; }
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.label { color: #777; }
+
+/* Secciones de Información */
+.info-section {
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.section-header {
+    background-color: #4a5568;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.section-header h2 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.section-content {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.section-content.empty {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}
+
+/* Tablas */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.data-table th {
+    text-align: left;
+    color: #888;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+.data-table td {
+    padding: 10px;
+    border-bottom: 1px solid #f9f9f9;
+}
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.main-header {
+    background-color: #c10e16; /* Rojo JNE */
+    color: white;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.nav-menu a.active {
+    background: white;
+    color: #c10e16;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* Cuerpo de la página */
+.back-link {
+    margin-bottom: 20px;
+}
+
+.back-link a {
+    color: #c10e16;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Tarjeta Candidato */
+.candidate-card {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.candidate-photo {
+    position: relative;
+    width: 150px;
+}
+
+.candidate-photo img {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.party-logo {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #c10e16;
+    color: white;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+.candidate-info h1 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+.role { color: #666; font-size: 14px; margin: 0; }
+.position { font-weight: bold; margin: 2px 0; }
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.label { color: #777; }
+
+/* Secciones de Información */
+.info-section {
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.section-header {
+    background-color: #4a5568;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.section-header h2 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.section-content {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.section-content.empty {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}
+
+/* Tablas */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.data-table th {
+    text-align: left;
+    color: #888;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+.data-table td {
+    padding: 10px;
+    border-bottom: 1px solid #f9f9f9;
+}

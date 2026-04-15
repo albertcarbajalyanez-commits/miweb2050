@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidatos 2026</title>
+    <link rel="stylesheet" href="estilo1.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="container">
+        <nav class="menu">
+            <a href="tabla.html">Inicio</a>
+            <a href="senadoresnacionales.html">Senadores</a>
+            <a href="diputadosregionalesnacionales.html">Diputados Regionales y Nacionales</a>
+            <a href="parlamentoandino.html">Parlamento Andino</a>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <div id="lista">
+        <h1 class="title">ELECCIONES GENERALES 2026</h1>
+        <h2 class="subtitle">CANDIDATOS PRESIDENCIALES</h2>
+        
+        <div class="candidate-grid">
+            <div class="candidate-card-mini" onclick="ver(1)"><div class="card-img"><img src="keiko.jpg"></div><div class="card-info-mini"><p class="mini-name">KEIKO FUJIMORI</p></div></div>
+            <div class="candidate-card-mini" onclick="ver(2)"><div class="card-img"><img src="rafael.jpg"></div><div class="card-info-mini"><p class="mini-name">RAFAEL LÓPEZ ALIAGA</p></div></div>
+            <div class="candidate-card-mini" onclick="ver(3)"><div class="card-img"><img src="acuna.jpg"></div><div class="card-info-mini"><p class="mini-name">CÉSAR ACUÑA</p></div></div>
+            <div class="candidate-card-mini" onclick="ver(4)"><div class="card-img"><img src="alfonso.jpg"></div><div class="card-info-mini"><p class="mini-name">ALFONSO LÓPEZ CHAU</p></div></div>
+            <div class="candidate-card-mini" onclick="ver(5)"><div class="card-img"><img src="alvaro.jpg"></div><div class="card-info-mini"><p class="mini-name">ÁLVARO PAZ DE LA BARRA</p></div></div>
+            <div class="candidate-card-mini" onclick="ver(6)"><div class="card-img"><img src="carlos.jpg"></div><div class="card-info-mini"><p class="mini-name">CARLOS ÁLVAREZ</p></div></div>
+            <div class="candidate-card-mini" onclick="ver(7)"><div class="card-img"><img src="george.jpg"></div><div class="card-info-mini"><p class="mini-name">GEORGE FORSYTH</p></div></div>
+            <div class="candidate-card-mini" onclick="ver(8)"><div class="card-img"><img src="jorge.jpg"></div><div class="card-info-mini"><p class="mini-name">JORGE MONTOYA</p></div></div>
+            <div class="candidate-card-mini" onclick="ver(9)"><div class="card-img"><img src="jose.jpg"></div><div class="card-info-mini"><p class="mini-name">JOSÉ WILLIAMS ZAPATA</p></div></div>
+            <div class="candidate-card-mini" onclick="ver(10)"><div class="card-img"><img src="marisol.jpg"></div><div class="card-info-mini"><p class="mini-name">MARISOL PÉREZ TELLO</p></div></div>
+            <div class="candidate-card-mini" onclick="ver(11)"><div class="card-img"><img src="mesias.jpg"></div><div class="card-info-mini"><p class="mini-name">MESÍAS GUEVARA</p></div></div>
+        </div>
+    </div>
+
+<div id="detalle" style="display:none;">
+    <button class="volver-btn" onclick="volver()">← CANDIDATOS EG 2026</button>
+
+    <div id="candidato-3" class="info-candidato">
+        <section class="candidate-card">
+            <div class="candidate-photo"><img src="acuna.jpg"><div class="party-logo">APP</div></div>
+            <div class="candidate-info">
+                <h1>CÉSAR ACUÑA PERALTA</h1>
+                <p class="role">Cargo al que postula:</p>
+                <p class="position">PRESIDENTE DE LA REPÚBLICA</p>
+                <div class="details-grid">
+                    <div><span class="label">Partido:</span> Alianza para el Progreso</div>
+                    <div><span class="label">Nacimiento:</span> 11/08/1952</div>
+                </div>
+            </div>
+        </section>
+        <section class="info-section">
+            <div class="section-header"><h2>ESTUDIOS UNIVERSITARIOS</h2><span>&#8964;</span></div>
+            <div class="section-content">
+                <table class="data-table">
+                    <thead><tr><th>UNIVERSIDAD</th><th>CONCLUIDO</th><th>GRADO</th><th>AÑO</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td>Universidad Nacional de Trujillo</td>
+                            <td>SÍ</td>
+                            <td>INGENIERO QUÍMICO</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <div id="candidato-4" class="info-candidato">
+        <section class="candidate-card">
+            <div class="candidate-photo"><img src="alfonso.jpg"><div class="party-logo">AN</div></div>
+            <div class="candidate-info">
+                <h1>PABLO ALFONSO LÓPEZ CHAU NAVA</h1>
+                <p class="role">Cargo al que postula:</p>
+                <p class="position">PRESIDENTE DE LA REPÚBLICA</p>
+                <div class="details-grid">
+                    <div><span class="label">DNI:</span> 25331980</div>
+                    <div><span class="label">Lugar de Domicilio:</span> MIRAFLORES</div>
+                </div>
+            </div>
+        </section>
+        <section class="info-section">
+            <div class="section-header"><h2>ESTUDIOS UNIVERSITARIOS</h2><span>&#8964;</span></div>
+            <div class="section-content">
+                <table class="data-table">
+                    <thead><tr><th>UNIVERSIDAD</th><th>CONCLUIDO</th><th>GRADO</th><th>AÑO</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td>Universidad Nacional del Callao</td>
+                            <td>SÍ</td>
+                            <td>ECONOMISTA</td>
+                            <td>1981</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <div id="candidato-6" class="info-candidato">
+        <section class="candidate-card">
+            <div class="candidate-photo"><img src="carlos.jpg"><div class="party-logo">PPT</div></div>
+            <div class="candidate-info">
+                <h1>CARLOS GONZALO ÁLVAREZ LOAYZA</h1>
+                <p class="role">Cargo al que postula:</p>
+                <p class="position">PRESIDENTE DE LA REPÚBLICA</p>
+                <div class="details-grid">
+                    <div><span class="label">Ingresos Anuales:</span> S/ 207,543</div>
+                    <div><span class="label">DNI:</span> 07854122</div>
+                </div>
+            </div>
+        </section>
+        <section class="info-section">
+            <div class="section-header"><h2>ESTUDIOS UNIVERSITARIOS</h2><span>&#8964;</span></div>
+            <div class="section-content">
+                <table class="data-table">
+                    <thead><tr><th>UNIVERSIDAD</th><th>CONCLUIDO</th><th>GRADO</th><th>AÑO</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td>-</td>
+                            <td>NO</td>
+                            <td>NO REGISTRA</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <div id="candidato-9" class="info-candidato">
+        <section class="candidate-card">
+            <div class="candidate-photo"><img src="jose.jpg"><div class="party-logo">AP</div></div>
+            <div class="candidate-info">
+                <h1>JOSÉ DANIEL WILLIAMS ZAPATA</h1>
+                <p class="role">Cargo al que postula:</p>
+                <p class="position">PRESIDENTE DE LA REPÚBLICA</p>
+                <div class="details-grid">
+                    <div><span class="label">DNI:</span> 07254812</div>
+                    <div><span class="label">Sexo:</span> Masculino</div>
+                </div>
+            </div>
+        </section>
+        <section class="info-section">
+            <div class="section-header"><h2>ESTUDIOS UNIVERSITARIOS</h2><span>&#8964;</span></div>
+            <div class="section-content">
+                <table class="data-table">
+                    <thead><tr><th>UNIVERSIDAD</th><th>CONCLUIDO</th><th>GRADO</th><th>AÑO</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td>Escuela Militar de Chorrillos</td>
+                            <td>SÍ</td>
+                            <td>LIC. CIENCIAS MILITARES</td>
+                            <td>2009</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <div id="candidato-2" class="info-candidato">
+        <section class="candidate-card">
+            <div class="candidate-photo"><img src="rafael.jpg"><div class="party-logo">RP</div></div>
+            <div class="candidate-info">
+                <h1>RAFAEL BERNARDO LÓPEZ ALIAGA CAZORLA</h1>
+                <p class="role">Cargo al que postula:</p>
+                <p class="position">PRESIDENTE DE LA REPÚBLICA</p>
+                <div class="details-grid">
+                    <div><span class="label">Partido:</span> Renovación Popular</div>
+                    <div><span class="label">Cargo:</span> Alcalde de Lima</div>
+                </div>
+            </div>
+        </section>
+        <section class="info-section">
+            <div class="section-header"><h2>ESTUDIOS UNIVERSITARIOS</h2><span>&#8964;</span></div>
+            <div class="section-content">
+                <table class="data-table">
+                    <thead><tr><th>UNIVERSIDAD</th><th>CONCLUIDO</th><th>GRADO</th><th>AÑO</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td>Univ. Nacional Pedro Ruiz Gallo</td>
+                            <td>SÍ</td>
+                            <td>INGENIERO INDUSTRIAL</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <div id="candidato-8" class="info-candidato">
+    <section class="candidate-card">
+        <div class="candidate-photo">
+            <img src="jorge.jpg" alt="Jorge Montoya">
+            <div class="party-logo">SC</div>
+        </div>
+        <div class="candidate-info">
+            <h1>JORGE CARLOS MONTOYA MANRIQUE</h1>
+            <p class="role">Cargo al que postula:</p>
+            <p class="position">PRESIDENTE DE LA REPÚBLICA / SENADOR</p>
+            <div class="details-grid">
+                <div><span class="label">Partido:</span> SÍCREO</div>
+                <div><span class="label">Nacimiento:</span> 04/04/1951 (LIMA)</div>
+                <div><span class="label">Cargo Actual:</span> Congresista de la República</div>
+            </div>
+        </div>
+    </section>
+    <section class="info-section">
+        <div class="section-header"><h2>ESTUDIOS UNIVERSITARIOS</h2><span>&#8964;</span></div>
+        <div class="section-content">
+            <table class="data-table">
+                <thead><tr><th>UNIVERSIDAD</th><th>CONCLUIDO</th><th>GRADO</th><th>AÑO</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>Escuela Naval del Perú</td>
+                        <td>SÍ</td>
+                        <td>BACHILLER EN CIENCIAS MARÍTIMAS</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+
+<div id="candidato-11" class="info-candidato">
+    <section class="candidate-card">
+        <div class="candidate-photo">
+            <img src="mesias.jpg" alt="Mesías Guevara">
+            <div class="party-logo">PM</div>
+        </div>
+        <div class="candidate-info">
+            <h1>MESÍAS ANTONIO GUEVARA AMASIFUÉN</h1>
+            <p class="role">Cargo al que postula:</p>
+            <p class="position">PRESIDENTE DE LA REPÚBLICA</p>
+            <div class="details-grid">
+                <div><span class="label">DNI:</span> 06283145</div>
+                <div><span class="label">Ingresos Anuales:</span> S/ 154,941.00</div>
+                <div><span class="label">Nacimiento:</span> 13/06/1963 (CHICLAYO)</div>
+            </div>
+        </div>
+    </section>
+    <section class="info-section">
+        <div class="section-header"><h2>ESTUDIOS UNIVERSITARIOS</h2><span>&#8964;</span></div>
+        <div class="section-content">
+            <table class="data-table">
+                <thead><tr><th>UNIVERSIDAD</th><th>CONCLUIDO</th><th>GRADO</th><th>AÑO</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>Universidad Ricardo Palma</td>
+                        <td>SÍ</td>
+                        <td>INGENIERO ELECTRÓNICO</td>
+                        <td>1987</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+
+<div id="candidato-10" class="info-candidato">
+    <section class="candidate-card">
+        <div class="candidate-photo">
+            <img src="marisol.jpg" alt="Marisol Pérez Tello">
+            <div class="party-logo">PPC</div>
+        </div>
+        <div class="candidate-info">
+            <h1>MARÍA SOLEDAD PÉREZ TELLO</h1>
+            <p class="role">Cargo al que postula:</p>
+            <p class="position">PRESIDENTE DE LA REPÚBLICA</p>
+            <div class="details-grid">
+                <div><span class="label">Partido:</span> PARTIDO POPULAR CRISTIANO</div>
+                <div><span class="label">Profesión:</span> Abogada / Notaria</div>
+            </div>
+        </div>
+    </section>
+    <section class="info-section">
+        <div class="section-header"><h2>ESTUDIOS UNIVERSITARIOS</h2><span>&#8964;</span></div>
+        <div class="section-content">
+            <table class="data-table">
+                <thead><tr><th>UNIVERSIDAD</th><th>CONCLUIDO</th><th>GRADO</th><th>AÑO</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>Univ. San Martín de Porres</td>
+                        <td>SÍ</td>
+                        <td>ABOGADA</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+
+<div id="candidato-7" class="info-candidato">
+    <section class="candidate-card">
+        <div class="candidate-photo">
+            <img src="george.jpg" alt="George Forsyth">
+            <div class="party-logo">SP</div>
+        </div>
+        <div class="candidate-info">
+            <h1>GEORGE PATRICK FORSYTH SOMMER</h1>
+            <p class="role">Cargo al que postula:</p>
+            <p class="position">PRESIDENTE DE LA REPÚBLICA</p>
+            <div class="details-grid">
+                <div><span class="label">Ingresos:</span> S/ 0.00 (Decl. 2022)</div>
+                <div><span class="label">Bienes:</span> 2 predios (S/ 264,102.85)</div>
+                <div><span class="label">Cargo Anterior:</span> Exalcalde de La Victoria</div>
+            </div>
+        </div>
+    </section>
+    <section class="info-section">
+        <div class="section-header"><h2>ESTUDIOS UNIVERSITARIOS</h2><span>&#8964;</span></div>
+        <div class="section-content">
+            <table class="data-table">
+                <thead><tr><th>UNIVERSIDAD</th><th>CONCLUIDO</th><th>GRADO</th><th>AÑO</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>-</td>
+                        <td>NO</td>
+                        <td>SIN INFORMACIÓN</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+
+<div id="candidato-5" class="info-candidato">
+    <section class="candidate-card">
+        <div class="candidate-photo">
+            <img src="alvaro.jpg" alt="Álvaro Paz de la Barra">
+            <div class="party-logo">FS</div>
+        </div>
+        <div class="candidate-info">
+            <h1>ÁLVARO GONZALO PAZ DE LA BARRA FREIGEIRO</h1>
+            <p class="role">Cargo al que postula:</p>
+            <p class="position">PRESIDENTE DE LA REPÚBLICA</p>
+            <div class="details-grid">
+                <div><span class="label">DNI:</span> 41533621</div>
+                <div><span class="label">Partido:</span> FE EN EL PERÚ</div>
+                <div><span class="label">Cargo Anterior:</span> Exalcalde de La Molina</div>
+            </div>
+        </div>
+    </section>
+    <section class="info-section">
+        <div class="section-header"><h2>ESTUDIOS UNIVERSITARIOS</h2><span>&#8964;</span></div>
+        <div class="section-content">
+            <table class="data-table">
+                <thead><tr><th>UNIVERSIDAD</th><th>CONCLUIDO</th><th>GRADO</th><th>AÑO</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>Univ. San Martín de Porres</td>
+                        <td>SÍ</td>
+                        <td>ABOGADO</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+
+    <div id="candidato-1" class="info-candidato">
+        <section class="candidate-card">
+            <div class="candidate-photo"><img src="keiko.jpg"><div class="party-logo">FP</div></div>
+            <div class="candidate-info">
+                <h1>KEIKO SOFÍA FUJIMORI HIGUCHI</h1>
+                <p class="role">Cargo al que postula:</p>
+                <p class="position">PRESIDENTE DE LA REPÚBLICA</p>
+                <div class="details-grid">
+                    <div><span class="label">Ingresos:</span> S/ 271,853</div>
+                    <div><span class="label">DNI:</span> 40433187</div>
+                </div>
+            </div>
+        </section>
+        <section class="info-section">
+            <div class="section-header"><h2>ESTUDIOS UNIVERSITARIOS</h2><span>&#8964;</span></div>
+            <div class="section-content">
+                <table class="data-table">
+                    <thead><tr><th>UNIVERSIDAD</th><th>CONCLUIDO</th><th>GRADO</th><th>AÑO</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td>Boston University</td>
+                            <td>SÍ</td>
+                            <td>ADMINISTRACIÓN DE EMPRESAS</td>
+                            <td>1997</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
